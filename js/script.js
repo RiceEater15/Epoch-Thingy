@@ -1,4 +1,3 @@
-// Floating particles (like glowing dust in the air)
 const canvas = document.getElementById('particles');
 const ctx = canvas.getContext('2d');
 
@@ -39,11 +38,11 @@ window.addEventListener('resize', () => {
   canvas.height = window.innerHeight;
 });
 
-// Time travel button action
+
 function beginTimeTravel() {
   document.body.style.transition = "background 2s ease";
   document.body.style.background = "radial-gradient(circle at center, #000, #003300)";
   setTimeout(() => {
-    window.location.href = "timeline.html"; // next page of your project
+    window.location.href = "timeline.html"; 
   }, 1500);
 }
