@@ -46,3 +46,19 @@ function beginTimeTravel() {
     window.location.href = "timeline.html"; 
   }, 1500);
 }
+
+const fadeElements = document.querySelectorAll('.scroll-fade');
+
+function checkFadeIn() {
+  const triggerBottom = window.innerHeight * 0.85;
+  fadeElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < triggerBottom) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('scroll', checkFadeIn);
+window.addEventListener('load', checkFadeIn);
+
