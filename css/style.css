@@ -11,7 +11,6 @@ body {
   font-family: 'Open Sans', sans-serif;
   color: white;
   position: relative;
-  z-index: 1;
 }
 
 /* Moving mist effect */
