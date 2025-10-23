@@ -18,6 +18,8 @@ window.addEventListener("scroll", () => {
       point.classList.add("active");
     }
   });
+
+  handleScrollFade();
 });
 
 points.forEach(point => {
@@ -27,8 +29,21 @@ points.forEach(point => {
   });
 });
 
-
 function toggleMenu() {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("open");
 }
+
+function handleScrollFade() {
+  const fadeElements = document.querySelectorAll('.scroll-fade');
+  const triggerBottom = window.innerHeight * 0.85;
+
+  fadeElements.forEach(el => {
+    const rect = el.getBoundingClientRect();
+    if (rect.top < triggerBottom) {
+      el.classList.add('visible');
+    }
+  });
+}
+
+window.addEventListener('load', handleScrollFade);
