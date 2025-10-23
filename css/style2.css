@@ -33,7 +33,9 @@ section {
 
 /* Intro Section */
 #intro {
-  background: linear-gradient(to bottom, #002a12, #000);
+  background-image: url('https://cdn.pixabay.com/photo/2018/08/15/13/10/new-year-background-3608029_1280.jpg');
+  background-size: cover;
+  background-position: center;
 }
 #intro h1 {
   font-family: 'Cinzel', serif;
