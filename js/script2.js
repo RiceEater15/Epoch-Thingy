@@ -27,7 +27,7 @@ points.forEach(point => {
   });
 });
 
-// Navbar toggle
+
 function toggleMenu() {
   const sidebar = document.getElementById("sidebar");
   sidebar.classList.toggle("open");
