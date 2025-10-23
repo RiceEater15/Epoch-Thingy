@@ -84,3 +84,67 @@ canvas {
   height: 100%;
   z-index: 0;
 }
+
+.menu-btn {
+  position: fixed;
+  top: 20px;
+  left: 20px;
+  font-size: 2em;
+  color: white;
+  cursor: pointer;
+  z-index: 20;
+  text-shadow: 0 0 8px #00ff99;
+  transition: 0.3s ease;
+}
+.menu-btn:hover {
+  transform: scale(1.1);
+}
+
+#sidebar {
+  position: fixed;
+  left: -260px;
+  top: 0;
+  height: 100%;
+  width: 260px;
+  background: rgba(0,0,0,0.9);
+  backdrop-filter: blur(6px);
+  box-shadow: 2px 0 15px rgba(0,0,0,0.6);
+  transition: left 0.4s ease;
+  z-index: 30;
+  padding-top: 60px;
+}
+#sidebar.open {
+  left: 0;
+}
+
+#sidebar ul {
+  list-style: none;
+  padding: 0 20px;
+}
+#sidebar li {
+  margin: 25px 0;
+}
+#sidebar a {
+  text-decoration: none;
+  color: #00ffcc;
+  font-size: 1.2em;
+  font-weight: bold;
+  transition: 0.3s ease;
+}
+#sidebar a:hover {
+  color: #00ffaa;
+  text-shadow: 0 0 10px #00ffaa;
+}
+
+.close-btn {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  font-size: 2em;
+  cursor: pointer;
+  color: white;
+  transition: 0.3s ease;
+}
+.close-btn:hover {
+  color: #00ff99;
+}
