@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Holocene Timeline</title>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@700&family=Open+Sans&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style2.css">
+</head>
+<body>
+  <!-- Navbar -->
+  <nav id="sidebar">
+    <div class="close-btn" onclick="toggleMenu()">×</div>
+    <ul>
+      <li><a href="index.html">🏠 Home</a></li>
+      <li><a href="#ice-age">❄ Ice Age</a></li>
+      <li><a href="#warming">🔥 Warming Climate</a></li>
+      <li><a href="#human-age">🌾 Human Age</a></li>
+      <li><a href="about.html">📘 About</a></li>
+      <li><a href="sources.html">🔗 Sources</a></li>
+    </ul>
+  </nav>
+
+  <!-- Menu Button -->
+  <div class="menu-btn" onclick="toggleMenu()">☰</div>
+
+  <!-- Page Sections -->
+  <section id="intro">
+    <div class="content">
+      <h1>Time Travel to the Start of Our Epoch</h1>
+      <p class="subtitle">Scroll to travel through time — from the Ice Age to the dawn of civilization.</p>
+      <div class="scroll-hint">↓ Scroll Down ↓</div>
+    </div>
+  </section>
+
+  <section id="ice-age">
+    <div class="content">
+      <h2>The Last Ice Age</h2>
+      <p>Massive glaciers covered much of the Earth. Temperatures were colder, and large animals like mammoths roamed the frozen tundra.</p>
+    </div>
+  </section>
+
+  <section id="warming">
+    <div class="content">
+      <h2>Warming Climate</h2>
+      <p>As the Earth warmed, ice sheets melted and sea levels rose. Forests expanded, and humans began to adapt to new environments.</p>
+    </div>
+  </section>
+
+  <section id="human-age">
+    <div class="content">
+      <h2>The Holocene Epoch</h2>
+      <p>The start of human civilization — agriculture, settlements, and the birth of history as we know it.</p>
+    </div>
+  </section>
+
+  <!-- Scroll Timeline -->
+  <div class="timeline">
+    <div class="line"></div>
+    <div class="point active" data-target="#ice-age"></div>
+    <div class="point" data-target="#warming"></div>
+    <div class="point" data-target="#human-age"></div>
+  </div>
+
+  <script src="js/script2.js"></script>
+</body>
+</html>
