@@ -44,6 +44,6 @@ function beginTimeTravel() {
   document.body.style.transition = "background 2s ease";
   document.body.style.background = "radial-gradient(circle at center, #000, #003300)";
   setTimeout(() => {
-    window.location.href = "holocene.html"; // next page of your project
+    window.location.href = "timeline.html"; // next page of your project
   }, 1500);
 }
