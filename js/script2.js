@@ -1,4 +1,3 @@
-// Scroll timeline logic
 const sections = document.querySelectorAll("section");
 const points = document.querySelectorAll(".point");
 
@@ -21,7 +20,6 @@ window.addEventListener("scroll", () => {
   });
 });
 
-// Timeline dot scroll
 points.forEach(point => {
   point.addEventListener("click", () => {
     const target = document.querySelector(point.dataset.target);
