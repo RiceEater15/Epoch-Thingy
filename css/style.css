@@ -5,8 +5,8 @@
 }
 
 body {
-  height: 100vh;
-  overflow: hidden;
+  min-height: 100vh;
+  overflow-x: hidden;
   background: radial-gradient(circle at center, #082c12 0%, #010a04 100%);
   font-family: 'Open Sans', sans-serif;
   color: white;
