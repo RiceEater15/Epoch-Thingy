@@ -262,4 +262,7 @@ canvas {
   transform: translateY(0);
 }
 
+li ul {
+  list-style: none;
+}
 
